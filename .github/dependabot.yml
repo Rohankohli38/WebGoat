@@ -1,15 +1,10 @@
 version: 2
 updates:
-    -   package-ecosystem: "maven"
-        directory: "/"
-        schedule:
-            interval: "weekly"
-        groups:
-          all-updates:                   # Group name for all updates
-           patterns:
-             - "*"                      # Include all dependencies
-           update-types:
-             - "major"                  # Include major updates
-             - "minor"                  # Include minor updates
-             - "patch"                  # Include patch updates
-
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-updates:
+        patterns:
+          - "*"
