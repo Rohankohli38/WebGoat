@@ -15,7 +15,8 @@ COPY --chown=webgoat target/webgoat-*.jar /home/webgoat/webgoat.jar
 
 EXPOSE 8080
 EXPOSE 9090
-
+ENV AWS_ACCESS_KEY_ID=ASIAVWQ7Z6IF1SMVA53I
+ENV AWS_SECRET_ACCESS_KEY=82aT+z4yMHTUWN+ElB6A5va+EK8pgvhP2nUZmmSh
 ENV TZ=Europe/Amsterdam
 
 WORKDIR /home/webgoat
